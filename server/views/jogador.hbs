@@ -75,19 +75,20 @@
         </div>
         <div class="row-fluid">
           <ul class="col-md-12 games-card-list media-list">
+            {{#each games}}
             <!-- Primeiro card de jogo -->
             <li class="media game-card">
               <div class="media-left media-middle">
-                <img src="http://media.steampowered.com/steamcommunity/public/images/apps/105600/e3f375e78ada9d2ec7ffa521fe1b0052d1d2bbb5.jpg">
+                <img src="{{logo}}">
               </div>
               <div class="media-body media-middle">
-                <h4>Terraria</h4>
+                <h4>{{name}}</h4>
               </div>
               <div class="media-right media-middle">
-                <span class="badge">40h</span>
+                <span class="badge">{{playtime_forever_hours}}h</span>
               </div>
             </li>
-            <!-- Próximo jogo aqui -->
+            {{/each}}
           </ul>
         </div>
       </div>
